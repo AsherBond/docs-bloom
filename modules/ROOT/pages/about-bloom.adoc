@@ -101,9 +101,8 @@ This option is most convenient if you prefer web-based apps, have restrictions o
 
 ==== Neo4j Desktop hosted
 
-Bloom client is available for free in Neo4j Desktop for local databases (up to Bloom 2.11.0) and does not require installation.
+Bloom is available as *Explore* for free in Neo4j Desktop for local databases and does not require installation.
 This setup may be desirable if you already run Neo4j Desktop, prefer using native apps, and like the convenience of automatic updates for new versions.
-Keep in mind though, that with Desktop you cannot use any version of Bloom later than 2.11.0.
 
 
 {nbsp} +
