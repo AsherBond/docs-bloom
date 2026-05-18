@@ -99,6 +99,7 @@ In this option, the Bloom client is available as a web app that is hosted by a w
 This setup requires no local install on your user machine.
 This option is most convenient if you prefer web-based apps, have restrictions on installing applications locally, or have strict firewall security in your network that may interfere with local applications.
 
+[[desktop-hosted]]
 ==== Neo4j Desktop hosted
 
 Bloom is available as *Explore* for free in Neo4j Desktop for local databases and does not require installation.
