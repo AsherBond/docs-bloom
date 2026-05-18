@@ -3,7 +3,7 @@
 [[bloom-deployment-modes]]
 = Bloom deployment modes
 
-As mentioned in xref::about-bloom.adoc/desktop_hosted[Neo4j Desktop hosted], Bloom is available as *Explore* in Neo4j Desktop.
+As mentioned in xref::/about-bloom.adoc#desktop-hosted[Neo4j Desktop hosted], Bloom is available as *Explore* in Neo4j Desktop.
 The Explore client app in Neo4j Desktop can be used independent of the Bloom server component.
 The client makes a direct connection to your Neo4j graph database and runs queries directly using this connection.
 
