@@ -10,6 +10,7 @@ See link:https://neo4j.com/docs/graph-data-science/current/[The Neo4j Graph Data
 ====
 Running Graph Data Science algorithms on elements in your Scene does *not* alter the underlying data.
 The scores only exist temporarily in Bloom.
+However, if you opt to create a projection on the *entire graph*, results *are written* back to your data as a new database property.
 ====
 
 The algorithms are described briefly below, but please refer to link:https://neo4j.com/docs/graph-data-science/current/[The Neo4j Graph Data Science Library Manual] for their full descriptions.
@@ -23,7 +24,7 @@ See xref:bloom-installation/bloom-prerequisites.adoc#version-compatibility[Versi
 [[algorithms]]
 == Available GDS algorithms in Bloom
 
-The available algortihms can be divided into two categories, _centrality_ and _community detection_.
+The available algorithms can be divided into two categories, _centrality_ and _community detection_.
 Centrality algorithms are used to measure the importance of particular nodes in a network and to discover the roles individual nodes play.
 A node's _importance_ can mean that it has a lot of connections or that it is transitively connected to other important nodes.
 It can also mean that another node can be reached in few hops or that it sits on the shortest path of multiple pairs of nodes.
@@ -129,10 +130,23 @@ When you have selected an appropriate algorithm, you have the option to run it o
 Additionally, you can also select the orientation of the relationships to be traversed.
 The options are accessed via the Settings button in the GDS drawer.
 
+When you are satisfied, you can either run the algorithm on the data in your *current Scene* or create a projection *on the entire graph*.
+The time it takes to run the algorithm can be different depending on the size of your graph.
+Additionally, running an algorithm on the current Scene only temporarily adds a score to the elements in the Scene.
+This action does *not* write to your graph.
+But creating a projection on the entire graph *adds a new database property* containing the individual score to *all affected elements*.
+The property name contains the name of the algorithm and a number and it is displayed in the GDS drawer.
+
+[.shadow]
+image::graph-algo.jpg[width=300]
+
+You can edit and delete the property on the individual nodes, but you *cannot* rename it.
+You can manually remove the property from the entire graph using a Cypher query in Neo4j Browser, for example, if needed.
+
 Applying your selected algorithm does not immediately change anything in the Scene.
 You can inspect each node to see its score, but to make the results easily visible, apply rule-based styling.
 This is done directly in the GDS drawer.
 The centrality algorithms are based on a range of values and can be either size-scaled or color gradient, while the community detection algorithms use unique values and offer unique colors to style the nodes.
 
 [.shadow]
-image::degree-centrality.jpg[width=800]
+image::eigenvector.jpg[width=800]
