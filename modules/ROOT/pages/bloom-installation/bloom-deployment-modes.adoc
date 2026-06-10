@@ -53,6 +53,11 @@ If the Bloom server is installed as a plugin to the database, then the Neo4j pro
 This setup is the easiest and most convenient to get started with server-hosted Bloom for users who will access the app via the web.
 It can be used for a single instance or a clustered setup of the Neo4j database.
 
+[NOTE]
+====
+It is currently *not possible* to connect to a local database using Chrome or Edge browsers.
+This is because they both block insecure (HTTP) connections.
+====
 image::neo4j-hosted-bloom-client.png[width=500,align="center"]
 
 Even though the Bloom server can package and host the Bloom client, you may prefer to use your own web server and host the Bloom client separately from the Neo4j database server.
