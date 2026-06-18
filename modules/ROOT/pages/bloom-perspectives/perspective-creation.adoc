@@ -43,7 +43,7 @@ As you query more data, Bloom adds any new properties as they are found.
 
 [NOTE]
 ====
-When using Bloom as _Explore_ in Workspace, it is currently not possible to select a different database for your Perspective from the Perspective Gallery.
+When using Bloom in the Aura console, it is currently not possible to select a different database for your Perspective from the Perspective Gallery.
 ====
 
 *Perspective Export and Import*

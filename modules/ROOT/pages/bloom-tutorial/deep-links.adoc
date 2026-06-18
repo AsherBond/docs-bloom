@@ -98,9 +98,9 @@ A deep link to Desktop-hosted Bloom requires an _active_ connection to the speci
 
 == Bloom in Aura
 
-As mentioned in xref:../bloom-installation/bloom-deployment-modes.adoc#bloom-in-aura[Bloom in Neo4j Aura], Bloom is available as _Explore_ in the Aura console.
+As mentioned in xref:../bloom-installation/bloom-deployment-modes.adoc#bloom-in-aura[Bloom in Neo4j Aura], Bloom is available in the Aura console.
 
-The link format for Explore in the Aura console is as follows:
+The link format for Bloom in the Aura console is as follows:
 
 [source, html, indent=0]
 ----
@@ -113,7 +113,7 @@ In the example above, the link would be constructed as follows (if you want the 
 https://console-preview.neo4j.io/tools/explore?search=employee%203115112&perspective=HRM%20Perspective&run=true
 ----
 
-If you want to link directly to the Bloom/Explore app in the console, the link format is as follows:
+If you want to link directly to the Bloom app in the console, the link format is as follows:
 
 [source, html, indent=0]
 ----
