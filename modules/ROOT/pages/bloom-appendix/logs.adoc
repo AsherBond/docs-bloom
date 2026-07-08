@@ -3,7 +3,7 @@
 
 [NOTE]
 ====
-Bloom-specific logs are only available when using the standalone application, i.e. **not** Explore.
+Bloom-specific logs are only available when using the standalone application, i.e. **not** in the Aura console or Desktop.
 ====
 
 Logs can help you understand what is happening within Bloom, both for performance and troubleshooting purposes.
