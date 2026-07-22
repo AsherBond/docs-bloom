@@ -10,6 +10,12 @@ By using the _Scene_ button, you can expand the Scene panel from which you can a
 The Scene panel is also where you switch between your Scenes, including any Scenes shared with you.
 If you have multiple Scenes saved, the search box allows you to filter through them.
 
+[WARNING]
+====
+If you are connected to an Aura instance, note that *pausing the instance results in the loss of any saved Scenes*.
+Make sure to export the Scene in Bloom before pausing the instance in the Aura console to preserve your Scene, as described in <<sharing-options>>.
+====
+
 [.shadow]
 image::scene-panel.png[width=400]
 
@@ -28,8 +34,10 @@ image::styling-perspective.png[width=300]
 ====
 Scenes rely on node and relationship IDs in Neo4j.
 Changes to this underlying data can cause data in saved Scenes to appear incorrectly if IDs are reused by the database.
+Such changes include backup and restore actions.
 ====
 
+[[sharing-options]]
 == Sharing options
 
 Bloom allows you to share your insights.
